@@ -7,7 +7,7 @@ import select
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
 if len(sys.argv) != 2:
-    print("please use this format: python3 chatserver server_addr:port number")
+    print("please use format: python3 chatserver server_addr:port number")
     sys.exit(1)
 args = str(sys.argv[1]).split(':')
 host = str(args[0])# create TCP welcoming socket
